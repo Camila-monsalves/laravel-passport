@@ -19,3 +19,7 @@ Route::post('/register', 'Auth\UserAuthController@register');
 Route::post('/login', 'Auth\UserAuthController@login');
 
 Route::apiResource('/employee', 'EmployeeController')->middleware('auth:api');
+Route::apiResource('/serie', 'SerieController');
+Route::apiResource('/empleoInformal', 'EmpleoInformalController');
+Route::apiResource('/empleo', 'EmpleoController');
+/* Route::apiResource('/user', 'UserController'); */
